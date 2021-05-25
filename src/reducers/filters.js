@@ -1,6 +1,6 @@
 // Filters Reducer
 
-const filtersReducerDefaultState = { text: '', sortBy: 'amount', startDate: undefined, endDate: undefined };
+const filtersReducerDefaultState = { text: '', sortBy: 'date', startDate: undefined, endDate: undefined };
 
 export default (state = filtersReducerDefaultState, action) => {
     switch(action.type) {
