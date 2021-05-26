@@ -1,5 +1,9 @@
 import {addExpense, editExpense, removeExpense } from '../../actions/expenses';
 
+/*
+*   Test cases for removeExpense Action Generator
+*/
+
 test('Should setup remove expense action object', () => {
     const action = removeExpense({ id: '123141abc' });
     expect(action).toEqual({
@@ -15,6 +19,10 @@ test('Should setup remove expense action object with default object (no id passe
     })
 });
 
+/*
+*   Test cases for editExpense Action Generator
+*/
+
 test('Should set up edit expense action object', () => {
     const action = editExpense('123412', {description: "New Expense"});
     expect(action).toEqual({
@@ -25,6 +33,10 @@ test('Should set up edit expense action object', () => {
         }
     });
 });
+
+/*
+*   Test cases for addExpense Action Generator
+*/
 
 test('Should setup add expense action object with provided values', () => {
     const expenseData = { description: 'Water bill', note: 'This bill sucks', amount: 150, createdAt: 1000}
