@@ -6,7 +6,7 @@ import configureStore from "./store/configureStore";
 import './styles/styles.scss';
 import 'normalize.css/normalize.css';
 import { addExpense } from './actions/expenses';
-import getVisibleExpense from './selectors/expenses';
+import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
