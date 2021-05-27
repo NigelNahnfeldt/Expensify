@@ -6,9 +6,9 @@ import expenses from '../fixtures/expenses';
 let addExpense, history, wrapper;
 
 beforeEach(() => {
-    onSubmit = jest.fn();
+    addExpense = jest.fn();
     history = { push: jest.fn() };
-    wrapper = shallow(<AddExpensePage addExpense={onSubmit} history={history} />);
+    wrapper = shallow(<AddExpensePage addExpense={addExpense} history={history} />);
 });
 
 test('Should render AddExpense component correctly', () => {
